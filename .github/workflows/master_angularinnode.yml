@@ -23,7 +23,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm run build --prod --baseHref=/hello-world-app/ --output-hashing none
+        npm run build --prod --baseHref=/hello-world-app/
       working-directory: .
 
     - name: 'Deploy to Azure Web App'
