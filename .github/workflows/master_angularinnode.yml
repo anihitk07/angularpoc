@@ -30,5 +30,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'angularinnode'
-        publish-profile: $
+        slot-name: 'Production'
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0C0A4B17D5FE415EAA44E189EFB0327A }}
         package: ./dist/hello-world-app
